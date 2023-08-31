@@ -17,7 +17,7 @@ public class TV {
 	}
 	
 	Marca getMarca(){
-		return marca;
+		return this.marca;
 		
 	}
 	int getCanal(){

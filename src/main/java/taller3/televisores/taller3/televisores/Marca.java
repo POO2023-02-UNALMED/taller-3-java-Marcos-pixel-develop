@@ -6,7 +6,7 @@ public class Marca {
 		this.nombre = nombre;
 		
 	}
-	String get() {
+	String getNombre() {
 		return this.nombre;
 	}
 	void set(String nuevo_nombre) {

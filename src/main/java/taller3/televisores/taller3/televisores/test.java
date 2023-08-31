@@ -8,7 +8,7 @@ public class test {
 		TV tv1 = new TV(marca1,false);
 		control1.enlazar(tv1);
 		control1.setCanal(23);
-		System.out.print(tv1.canal);
+		System.out.print(tv1.getMarca().getNombre());
 		
 		
 	}
