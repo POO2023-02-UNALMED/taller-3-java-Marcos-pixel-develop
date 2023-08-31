@@ -69,9 +69,9 @@ public static int getNumTV() {
  public boolean getEstado() {
 	return estado;
 }
-  void canalUp() {
+ public void canalUp() {
 	if(estado==true && canal<120) {
-		++canal;
+		canal++;
 	};
 	return;
 }
@@ -80,20 +80,20 @@ public static int getNumTV() {
 	num_Tv = num; 
 	 
  }
-  void canalDown() {
+ public void canalDown() {
 	if(estado==true && canal>1) {
 		--canal;
 	};
 	return;
-}  void volumenUp() {
+}public  void volumenUp() {
 	if(estado==true && volumen<7) {
 		++volumen;
 	};
 	return;
 }
-  void volumenDown() {
+ public void volumenDown() {
 	if(estado==true && volumen>0) {
-		--volumen;
+		volumen--;
 	};
 	return;
 	
