@@ -2,7 +2,7 @@ package taller3.televisores;
 
 public class Control {
 	TV tv;
-	void turnOn() {
+	public void turnOn() {
 		tv.turnOn();
 	}
 	public TV getTv() {

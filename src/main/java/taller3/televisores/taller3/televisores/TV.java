@@ -75,6 +75,11 @@ public  int getTv() {
 	};
 	return;
 }
+ 
+ public void setNumTv(int num) {
+	num_Tv = num; 
+	 
+ }
  public void canalDown() {
 	if(estado==true && canal>0) {
 		canal--;
