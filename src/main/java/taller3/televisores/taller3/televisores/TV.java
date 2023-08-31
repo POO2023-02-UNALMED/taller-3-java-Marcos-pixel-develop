@@ -41,6 +41,9 @@ public int getPrecio(){
 	
 }
   public void setCanal(int new_canal){
+	  if(estado==false || canal<1 || canal>120) {
+			return;
+		};
 	canal=new_canal;
 }
   public void setPrecio(int new_precio){
@@ -48,6 +51,9 @@ public int getPrecio(){
 }
 
 public void setVolumen(int new_volumen){
+	if(estado==false|| volumen<0 || volumen>7) {
+		return;
+	};
 	volumen = new_volumen;
 
 }
