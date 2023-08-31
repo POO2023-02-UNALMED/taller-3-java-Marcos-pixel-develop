@@ -41,7 +41,7 @@ public int getPrecio(){
 	
 }
   public void setCanal(int new_canal){
-	  if(estado==false || canal<1 || canal>120) {
+	  if(estado==false || new_canal<1 || new_canal>120) {
 			return;
 		};
 	canal=new_canal;
@@ -51,7 +51,7 @@ public int getPrecio(){
 }
 
 public void setVolumen(int new_volumen){
-	if(estado==false|| volumen<0 || volumen>7) {
+	if(estado==false|| new_volumen<0 || new_volumen>7) {
 		return;
 	};
 	volumen = new_volumen;
@@ -81,25 +81,25 @@ public static int getNumTV() {
 	 
  }
  public void canalUp() {
-		if(estado==false || canal>120) {
+		if(estado==false || canal>=120) {
 			return;
 		};
 		canal++;
 	}
 	 
  public void canalDown() {
-	if(estado==false || canal<1) {
+	if(estado==false || canal<=1) {
 		return;
 	};
 	canal--;
 }public  void volumenUp() {
-	if(estado==false || volumen>7) {
+	if(estado==false || volumen>=7) {
 		return;
 	};
 	volumen++;
 }
  public void volumenDown() {
-	if(estado==false|| volumen<0) {
+	if(estado==false|| volumen<=0) {
 		return;
 	};
 	volumen--;
