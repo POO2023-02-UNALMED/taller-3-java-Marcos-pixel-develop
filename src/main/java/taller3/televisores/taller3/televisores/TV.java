@@ -76,7 +76,7 @@ public  int getTv() {
 	return;
 }
  
- public void setNumTv(int num) {
+ public void setNumTV(int num) {
 	num_Tv = num; 
 	 
  }
