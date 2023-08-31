@@ -54,7 +54,7 @@ public void setVolumen(int new_volumen){
 public void setControl(Control new_control) {
 	control = new_control;
 }
-public  int getTv() {
+public static int getNumTV() {
 	return num_Tv;
 }
 
@@ -76,7 +76,7 @@ public  int getTv() {
 	return;
 }
  
- public void setNumTV(int num) {
+ public static void setNumTV(int num) {
 	num_Tv = num; 
 	 
  }

@@ -29,6 +29,9 @@ public class Control {
 	public void setVolumen(int volumen) {
 		tv.setVolumen(volumen);
 	}
+	public void setTv(TV tv) {
+		this.tv = tv
+	}
 	public void enlazar(TV tv) {
 		this.tv = tv;
 		this.tv.control=this;
