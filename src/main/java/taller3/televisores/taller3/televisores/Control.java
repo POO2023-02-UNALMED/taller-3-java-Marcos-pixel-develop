@@ -30,7 +30,7 @@ public class Control {
 		tv.setVolumen(volumen);
 	}
 	public void setTv(TV tv) {
-		this.tv = tv
+		this.tv = tv;
 	}
 	public void enlazar(TV tv) {
 		this.tv = tv;
