@@ -5,7 +5,7 @@ public class TV {
 	int canal=1;
 	int precio=500;
 	
-	boolean estado;
+	boolean estado=false;
 	int volumen=1;
 	Control control;
 	static int  num_Tv;
@@ -81,18 +81,18 @@ public static int getNumTV() {
 	 
  }
  public void canalDown() {
-	if(estado==true && canal>0) {
+	if(estado==true && canal>=1) {
 		canal--;
 	};
 	return;
 }public  void volumenUp() {
-	if(estado==true && volumen<=7) {
+	if(estado==true && volumen<7) {
 		volumen++;
 	};
 	return;
 }
  public void volumenDown() {
-	if(estado==true && volumen>=0) {
+	if(estado==true && volumen>0) {
 		volumen--;
 	};
 	return;
