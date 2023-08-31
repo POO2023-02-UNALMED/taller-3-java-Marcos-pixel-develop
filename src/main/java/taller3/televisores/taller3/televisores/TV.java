@@ -69,30 +69,31 @@ public static int getNumTV() {
  public boolean getEstado() {
 	return estado;
 }
- public void canalUp() {
-	if(estado==false || canal>=120) {
-		return;
-	};
-	canal++;
-}
  
  public static void setNumTV(int num) {
 	num_Tv = num; 
 	 
  }
+ public void canalUp() {
+		if(estado==false || canal>120) {
+			return;
+		};
+		canal++;
+	}
+	 
  public void canalDown() {
-	if(estado==false || canal<=1) {
+	if(estado==false || canal<1) {
 		return;
 	};
 	canal--;
 }public  void volumenUp() {
-	if(estado==false || volumen>=7) {
+	if(estado==false || volumen>7) {
 		return;
 	};
 	volumen++;
 }
  public void volumenDown() {
-	if(estado==false|| volumen<=0) {
+	if(estado==false|| volumen<0) {
 		return;
 	};
 	volumen--;
